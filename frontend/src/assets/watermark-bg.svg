@@ -1,0 +1,48 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="60" cy="60" r="1.5" fill="currentColor" opacity="0.6"/>
+    </pattern>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Grid Pattern -->
+  <rect width="600" height="600" fill="url(#grid-pattern)" />
+
+  <!-- Abstract Code Brackets & Nodes -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Big Left Bracket { -->
+    <path d="M 80,120 C 50,120 50,160 50,180 C 50,200 30,220 15,220 C 30,220 50,240 50,260 C 50,280 50,320 80,320" opacity="0.35"/>
+    
+    <!-- Big Right Bracket } -->
+    <path d="M 520,120 C 550,120 550,160 550,180 C 550,200 570,220 585,220 C 570,220 550,240 550,260 C 550,280 550,320 520,320" opacity="0.35"/>
+
+    <!-- Logic Tree & AI Graph Nodes -->
+    <path d="M 300,80 L 300,160 M 300,160 L 210,240 M 300,160 L 390,240 M 210,240 L 150,340 M 210,240 L 270,340 M 390,240 L 330,340 M 390,240 L 450,340" opacity="0.25" stroke-dasharray="4,4"/>
+    
+    <!-- Nodes -->
+    <circle cx="300" cy="80" r="6" fill="currentColor" opacity="0.5"/>
+    <circle cx="300" cy="160" r="5" fill="currentColor" opacity="0.4"/>
+    <circle cx="210" cy="240" r="5" fill="currentColor" opacity="0.4"/>
+    <circle cx="390" cy="240" r="5" fill="currentColor" opacity="0.4"/>
+    <circle cx="150" cy="340" r="4" fill="currentColor" opacity="0.3"/>
+    <circle cx="270" cy="340" r="4" fill="currentColor" opacity="0.3"/>
+    <circle cx="330" cy="340" r="4" fill="currentColor" opacity="0.3"/>
+    <circle cx="450" cy="340" r="4" fill="currentColor" opacity="0.3"/>
+
+    <!-- Syntactic Symbol Glyphs -->
+    <!-- Function Call & Lambda -->
+    <path d="M 120,440 L 140,420 L 160,440 M 140,420 L 140,470" opacity="0.3"/>
+    <text x="180" y="450" font-family="monospace" font-size="22" fill="currentColor" opacity="0.35" font-weight="bold">f(x) =&gt; &#x03BB;</text>
+
+    <!-- Bug Diagnostic Cross-hair -->
+    <circle cx="480" cy="460" r="24" opacity="0.25"/>
+    <line x1="480" y1="426" x2="480" y2="494" opacity="0.3"/>
+    <line x1="446" y1="460" x2="514" y2="460" opacity="0.3"/>
+    <text x="465" y="515" font-family="monospace" font-size="12" fill="currentColor" opacity="0.35">DEBUG</text>
+  </g>
+</svg>

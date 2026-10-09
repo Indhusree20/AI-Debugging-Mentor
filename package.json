@@ -1,0 +1,19 @@
+{
+  "name": "ai-debugging-mentor-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Debugging Mentor - An Intelligent System for Code Error Detection and Guidance",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "server": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,green\" \"npm run backend\" \"npm run frontend\"",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
